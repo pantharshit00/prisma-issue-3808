@@ -1,0 +1,11 @@
+type User {
+  id: ID! @unique
+  name: String!
+  organisations: [Organisation!]!
+}
+
+type Organisation {
+  id: ID! @unique
+  name: String!
+  user: User!
+}
